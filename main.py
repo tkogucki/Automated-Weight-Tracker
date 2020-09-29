@@ -22,7 +22,7 @@ class Email():
         self.body = ''
         self.html_body = False
 
-#Authenticate Function
+# Authenticate Function
 def authenticate(file = 'username.txt'):
     host = 'imap.gmail.com'
     with open(file) as csv_file:
@@ -62,6 +62,7 @@ def email_data_extraction(search_data, mail):
     print(my_message)
     print(my_message[1].body)
     print(my_message[1].e_from)
+    print(my_message[2].body)
  
 
 def main():
